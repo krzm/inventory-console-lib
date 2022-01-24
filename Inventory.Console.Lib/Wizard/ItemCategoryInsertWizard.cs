@@ -2,7 +2,7 @@ using CLI.Core;
 using CLI.Core.Lib;
 using Inventory.Data;
 
-namespace Inventory.Lib;
+namespace Inventory.Console.Lib;
 
 public class ItemCategoryInsertWizard : InsertWizard<IInventoryUnitOfWork, ItemCategory>
 {
