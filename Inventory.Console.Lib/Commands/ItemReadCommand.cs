@@ -1,10 +1,11 @@
-﻿using CLI.Core.Lib;
-using Console.Lib;
+﻿using CLIFramework;
+using CRUDCommandHelper;
 using Inventory.Data;
 
 namespace Inventory.Console.Lib;
 
-public class ItemReadCommand : ReadCommand<Item>
+public class ItemReadCommand 
+    : ReadCommand<Item>
 {
     public ItemReadCommand(
         TextCommand textCommand

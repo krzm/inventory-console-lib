@@ -1,10 +1,11 @@
-using CLI.Core.Lib;
-using Console.Lib;
+using CLIFramework;
+using CLIWizardHelper;
 using Inventory.Data;
 
 namespace Inventory.Console.Lib;
 
-public class ItemImageUpdateCommand : UpdateCommand<ItemImage>
+public class ItemImageUpdateCommand 
+	: UpdateCommand<ItemImage>
 {
 	public ItemImageUpdateCommand(
 		TextCommand command

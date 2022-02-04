@@ -1,10 +1,11 @@
-using CLI.Core.Lib;
-using Console.Lib;
+using CLIFramework;
+using CLIWizardHelper;
 using Inventory.Data;
 
 namespace Inventory.Console.Lib;
 
-public class ItemImageInsertCommand : InsertCommand<ItemImage>
+public class ItemImageInsertCommand 
+    : InsertCommand<ItemImage>
 {
     public ItemImageInsertCommand(
         TextCommand textCommand
