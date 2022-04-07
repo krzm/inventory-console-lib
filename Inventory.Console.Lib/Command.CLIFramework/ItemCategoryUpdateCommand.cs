@@ -5,11 +5,11 @@ using Inventory.Data;
 namespace Inventory.Console.Lib;
 
 public class ItemCategoryUpdateCommand 
-    : InsertCommand<ItemCategory>
+    : UpdateCommand<ItemCategory>
 {
     public ItemCategoryUpdateCommand(
         TextCommand textCommand
-        , IInsertWizard<ItemCategory> categoryWizard)
+        , IUpdateWizard<ItemCategory> categoryWizard)
             : base(textCommand, categoryWizard)
     {
     }
