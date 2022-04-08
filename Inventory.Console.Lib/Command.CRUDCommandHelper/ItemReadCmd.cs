@@ -21,5 +21,7 @@ public class ItemReadCmd
     }
 
     protected override List<Item> Get(Item model) =>
-        UnitOfWork.Item.Get().ToList();
+        UnitOfWork.Item.Get(
+            includeProperties: "ItemCategory"
+        ).ToList();
 }
