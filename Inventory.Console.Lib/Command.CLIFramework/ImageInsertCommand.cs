@@ -4,12 +4,12 @@ using Inventory.Data;
 
 namespace Inventory.Console.Lib;
 
-public class ItemImageInsertCommand 
-    : InsertCommand<ItemImage>
+public class ImageInsertCommand 
+    : InsertCommand<Image>
 {
-    public ItemImageInsertCommand(
+    public ImageInsertCommand(
         TextCommand textCommand
-        , IInsertWizard<ItemImage> categoryWizard)
+        , IInsertWizard<Image> categoryWizard)
             : base(textCommand, categoryWizard)
     {
     }

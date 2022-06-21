@@ -4,12 +4,12 @@ using Inventory.Data;
 
 namespace Inventory.Console.Lib;
 
-public class ItemImageReadCommand 
-    : ReadCommand<ItemImage>
+public class ImageReadCommand 
+    : ReadCommand<Image>
 {
-    public ItemImageReadCommand(
+    public ImageReadCommand(
         TextCommand textCommand
-        , IReadCommand<ItemImage> readCommand)
+        , IReadCommand<Image> readCommand)
             : base(textCommand, readCommand)
     {
     }

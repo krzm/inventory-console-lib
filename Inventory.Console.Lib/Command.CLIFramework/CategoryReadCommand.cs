@@ -4,12 +4,12 @@ using Inventory.Data;
 
 namespace Inventory.Console.Lib;
 
-public class ItemCategoryReadCommand 
-    : ReadCommand<ItemCategory>
+public class CategoryReadCommand 
+    : ReadCommand<Category>
 {
-    public ItemCategoryReadCommand(
+    public CategoryReadCommand(
         TextCommand textCommand
-        , IReadCommand<ItemCategory> readCommand)
+        , IReadCommand<Category> readCommand)
             : base(textCommand, readCommand)
     {
     }

@@ -4,12 +4,12 @@ using Inventory.Data;
 
 namespace Inventory.Console.Lib;
 
-public class ItemCategoryUpdateCommand 
-    : UpdateCommand<ItemCategory>
+public class CategoryUpdateCommand 
+    : UpdateCommand<Category>
 {
-    public ItemCategoryUpdateCommand(
+    public CategoryUpdateCommand(
         TextCommand textCommand
-        , IUpdateWizard<ItemCategory> categoryWizard)
+        , IUpdateWizard<Category> categoryWizard)
             : base(textCommand, categoryWizard)
     {
     }

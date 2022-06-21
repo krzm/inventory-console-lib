@@ -6,20 +6,18 @@ using Serilog;
 
 namespace Inventory.Console.Lib;
 
-public class ItemReadCmd 
-    : ReadCommand<IInventoryUnitOfWork, Item, Item>
+public class ImageReadCmd 
+    : ReadCommand<IInventoryUnitOfWork, Image, Image>
 {
-    public ItemReadCmd(
+    public ImageReadCmd(
         IInventoryUnitOfWork unitOfWork
         , IOutput output
         , ILogger log
-        , IDataToText<Item> textProvider) 
+        , IDataToText<Image> textProvider) 
             : base(unitOfWork, output, log, textProvider)
     {
     }
 
-    protected override List<Item> Get(Item model) =>
-        UnitOfWork.Item.Get(
-            includeProperties: "ItemCategory"
-        ).ToList();
+    protected override List<Image> Get(Image model) =>
+        UnitOfWork.Image.Get().ToList();
 }
